@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Day Greeting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Welcome to Friendship Day Greeting!</h1>
+        <p>Enter your sweet name:</p>
+        <input type="text" id="nameInput" placeholder="Your Name">
+        <button onclick="sendName()">Send</button>
+    </div>
+
+    <script>
+        function sendName() {
+            const name = document.getElementById('nameInput').value;
+            if (name) {
+                // Redirect to the greeting page with the name as a query parameter
+                window.location.href = `greeting.html?name=${encodeURIComponent(name)}`;
+            } else {
+                alert("Please enter your name.");
+            }
+        }
+    </script>
+</body>
+</html>

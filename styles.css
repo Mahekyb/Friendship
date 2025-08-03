@@ -1,0 +1,52 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Welcome page styles */
+.welcome-container {
+    margin-top: 50px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff69b4;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #201c1e;
+}
+
+/* Greeting page styles */
+.greeting-container {
+    margin-top: 50px;
+}
+
+.decorations {
+    margin: 20px 0;
+}
+
+.decoration {
+    width: 300px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.quote {
+    font-style: italic;
+    color: rgb(11, 17, 10);
+}
